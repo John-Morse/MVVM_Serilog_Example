@@ -1,0 +1,22 @@
+﻿<!--  This resource dictionary is used by the MainWindow.  -->
+<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:vm="clr-namespace:MVVM_Template.ViewModel;assembly=ViewModel"
+    xmlns:vw="clr-namespace:MVVM_Template.View">
+
+    <!--  These templates apply Controls to an instance of their respective ViewModel class shown in the main window.  -->
+    <DataTemplate DataType="{x:Type vm:MainViewModel}">
+        <vw:MainControl />
+    </DataTemplate>
+    <DataTemplate DataType="{x:Type vm:AboutViewModel}">
+        <vw:AboutControl />
+    </DataTemplate>
+    <DataTemplate DataType="{x:Type vm:ShowDataViewModel}">
+        <vw:ShowDataControl />
+    </DataTemplate>
+
+    <!--  Here's where we can set styles and themes for the entire application.  -->
+    <!--  x:Key="{x:Type ToolTip}" <Setter Property = "Foreground" Value="Navy" /> -->
+
+</ResourceDictionary>

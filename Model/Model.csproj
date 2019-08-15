@@ -67,8 +67,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AboutModel\AboutItem.cs" />
+    <Compile Include="AboutModel\IAboutService.cs" />
+    <Compile Include="AboutModel\AboutService.cs" />
     <Compile Include="DataModel\DataItem.cs" />
     <Compile Include="DataModel\DataService.cs" />
+    <Compile Include="DataModel\IDataService.cs" />
     <Compile Include="MainModel\MainItem.cs" />
     <Compile Include="MainModel\MainService.cs" />
     <Compile Include="MainModel\IMainService.cs" />

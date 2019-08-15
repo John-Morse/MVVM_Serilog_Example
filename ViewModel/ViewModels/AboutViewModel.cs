@@ -8,13 +8,22 @@ namespace MVVM_Template.ViewModel
     /// </summary>
     public class AboutViewModel : ViewModelBase
     {
+        //set _dataService property to interface
+        private readonly IAboutService _dataService;
+
         /// <summary>
         /// Initializes a new instance of the AboutViewModel class.
         /// </summary>
-        public AboutViewModel()
+        public AboutViewModel(IAboutService dataService)
         {
-            //set the title here with AboutItem
-            this.aboutTitle = new AboutItem("This is the About component.").Title;
+            _dataService = dataService;
+
+            //go get the data
+            _dataService.GetData(
+                (item, error) =>
+                {
+                    AboutTitle = item.Title;
+                });
         }
 
         //About title properties

@@ -9,13 +9,23 @@ namespace MVVM_Template.ViewModel
     /// </summary>
     public class ShowDataViewModel : ViewModelBase
     {
+        //set _dataService property to interface
+        private readonly IDataService _dataService;
+
         /// <summary>
         /// Initializes a new instance of the MainViewModel class.
         /// </summary>
-        public ShowDataViewModel()
+        public ShowDataViewModel(IDataService dataService)
         {
             //go get and set the data collection
-            this.dataCollection = new DataService().GetData();
+            _dataService = dataService;
+
+            //go get the data
+            _dataService.GetData(
+                (item, error) =>
+                {
+                    DataCollection = item;
+                });            
         }
 
         //Data collection property

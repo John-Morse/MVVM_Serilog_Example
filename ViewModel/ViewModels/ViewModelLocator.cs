@@ -27,6 +27,8 @@ namespace MVVM_Template.ViewModel
             {
                 // Create run time view services and models
                 SimpleIoc.Default.Register<IMainService, MainService>();
+                SimpleIoc.Default.Register<IDataService, DataService>();
+                SimpleIoc.Default.Register<IAboutService, AboutService>();
             }
 
             SimpleIoc.Default.Register<MainViewModel>();

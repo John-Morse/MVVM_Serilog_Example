@@ -9,6 +9,9 @@ namespace MVVM_Template.ViewModel
     /// </summary>
     public class ShowDataViewModel : ViewModelBase
     {
+        //set the logger
+        private static readonly log4net.ILog log = log4net.LogManager.GetLogger(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
+
         //set _dataService property to interface
         private readonly IDataService _dataService;
 
@@ -25,7 +28,10 @@ namespace MVVM_Template.ViewModel
                 (item, error) =>
                 {
                     DataCollection = item;
-                });            
+                });
+
+            //log some info
+            log.Info("ShowDataViewModel Initialized");
         }
 
         //Data collection property

@@ -38,7 +38,8 @@
         <Grid
             Width="Auto"
             Height="Auto"
-            VerticalAlignment="Stretch">
+            VerticalAlignment="Stretch"
+            Style="{StaticResource GridBackground}">
             <ScrollViewer HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Auto">
                 <ContentControl
                     HorizontalAlignment="Stretch"

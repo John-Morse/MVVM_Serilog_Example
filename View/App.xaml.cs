@@ -20,7 +20,7 @@
             DispatcherHelper.Initialize();
 
             //log some info
-            log.Info("App Initialized");
+            log.Info("Application Initialized");
         }
     }
 }

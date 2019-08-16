@@ -8,6 +8,9 @@ namespace MVVM_Template.ViewModel
     /// </summary>
     public class AboutViewModel : ViewModelBase
     {
+        //set the logger
+        private static readonly log4net.ILog log = log4net.LogManager.GetLogger(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
+
         //set _dataService property to interface
         private readonly IAboutService _dataService;
 
@@ -24,6 +27,9 @@ namespace MVVM_Template.ViewModel
                 {
                     AboutTitle = item.Title;
                 });
+
+            //log some info
+            log.Info("AboutViewModel Initialized");
         }
 
         //About title properties

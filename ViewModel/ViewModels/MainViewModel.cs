@@ -10,6 +10,9 @@ namespace MVVM_Template.ViewModel
     /// </summary>
     public class MainViewModel : ViewModelBase
     {
+        //set the logger
+        private static readonly log4net.ILog log = log4net.LogManager.GetLogger(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
+
         //set _dataService property to interface
         private readonly IMainService _dataService;
         
@@ -30,6 +33,9 @@ namespace MVVM_Template.ViewModel
                 });
 
            this.CurrentContentView = this;
+
+            //log some info
+            log.Info("MainViewModel Initialized");
         }
 
         //WelcomeTitle property

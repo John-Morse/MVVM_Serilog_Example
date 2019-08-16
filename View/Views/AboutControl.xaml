@@ -5,24 +5,15 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     Width="auto"
     Height="auto"
-    Margin="0,10,0,0"
-    DataContext="{Binding About, Source={StaticResource Locator}}"
-    FontSize="14">
+    DataContext="{Binding About, Source={StaticResource Locator}}">
     <UserControl.Resources />
     <Grid>
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition />
-        </Grid.ColumnDefinitions>
-        <Grid.RowDefinitions>
-            <RowDefinition />
-        </Grid.RowDefinitions>
         <TextBlock
-            Grid.Row="0"
-            Grid.Column="0"
-            Margin="10,10,0,0"
             HorizontalAlignment="Center"
             VerticalAlignment="Center"
             FontSize="36"
+            FontWeight="Bold"
+            Foreground="Purple"
             Text="{Binding AboutTitle}"
             TextWrapping="Wrap" />
     </Grid>

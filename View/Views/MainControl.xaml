@@ -5,8 +5,7 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     Width="auto"
     Height="auto"
-    DataContext="{Binding Main, Source={StaticResource Locator}}"
-    FontSize="14">
+    DataContext="{Binding Main, Source={StaticResource Locator}}">
     <UserControl.Resources />
     <Grid>
         <TextBlock

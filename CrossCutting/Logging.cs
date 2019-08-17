@@ -22,7 +22,7 @@
             }
             catch (Exception ex)
             {
-                Dialogs.Error(ex); 
+                throw ex;
             }
             finally
             {

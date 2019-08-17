@@ -9,17 +9,8 @@
     <DataTemplate DataType="{x:Type vm:MainViewModel}">
         <vw:MainControl />
     </DataTemplate>
-    <DataTemplate DataType="{x:Type vm:AboutViewModel}">
-        <vw:AboutControl />
-    </DataTemplate>
-    <DataTemplate DataType="{x:Type vm:ShowDataViewModel}">
-        <vw:ShowDataControl />
-    </DataTemplate>
 
     <!--  Here's where we can set styles and themes for the entire application.  -->
     <!--  x:Key="{x:Type ToolTip}" <Setter Property = "Foreground" Value="Navy" /> -->
-    <Style x:Key="GridBackground">
-        <Setter Property="Grid.Background" Value="LightGray" />
-    </Style>
 
 </ResourceDictionary>

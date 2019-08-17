@@ -14,7 +14,7 @@
         /// <param name="callback"></param>
         public void GetData(Action<MainItem, Exception> callback)
         {
-            var item = new MainItem("This is a MVVM Light Template!");
+            var item = new MainItem("MVVM Light Base Template");
             callback(item, null);
         }
     }

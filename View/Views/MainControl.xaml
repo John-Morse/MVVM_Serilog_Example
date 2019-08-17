@@ -13,7 +13,7 @@
             VerticalAlignment="Center"
             FontSize="36"
             FontWeight="Bold"
-            Foreground="Purple"
+            Foreground="Red"
             Text="{Binding WelcomeTitle}"
             TextWrapping="Wrap" />
     </Grid>

@@ -10,9 +10,6 @@ namespace MVVM_Template.ViewModel
     /// </summary>
     public class MainViewModel : ViewModelBase
     {
-        //set the logger
-        private static readonly log4net.ILog log = log4net.LogManager.GetLogger(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
-
         //set _dataService property to interface
         private readonly IMainService _dataService;
         
@@ -33,9 +30,6 @@ namespace MVVM_Template.ViewModel
                 });
 
            this.CurrentContentView = this;
-
-            //log some info
-            log.Info("MainViewModel Initialized");
         }
 
         //WelcomeTitle property
@@ -65,40 +59,6 @@ namespace MVVM_Template.ViewModel
             {
                 currentContentView = value;
                 RaisePropertyChanged("CurrentContentView");
-            }
-        }
-
-        //About Command instance
-        private RelayCommand _aboutCommand;
-        public RelayCommand AboutCommand
-        {
-            get
-            {
-                if (_aboutCommand == null)
-                {
-                    _aboutCommand = new RelayCommand(() =>
-                    {
-                        this.CurrentContentView = ServiceLocator.Current.GetInstance<AboutViewModel>();
-                    });
-                }
-                return _aboutCommand;
-            }
-        }
-
-        //ShowData Command instance
-        private RelayCommand _showDataCommand;
-        public RelayCommand ShowDataCommand
-        {
-            get
-            {
-                if (_showDataCommand == null)
-                {
-                    _showDataCommand = new RelayCommand(() =>
-                    {
-                        this.CurrentContentView = ServiceLocator.Current.GetInstance<ShowDataViewModel>();
-                    });
-                }
-                return _showDataCommand;
             }
         }
 

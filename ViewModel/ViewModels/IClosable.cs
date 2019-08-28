@@ -1,4 +1,4 @@
-﻿namespace MVVM_Template.ViewModel
+﻿namespace MVVM_Serilog.ViewModel
 {
     /// <summary>
     /// ICloseable interface

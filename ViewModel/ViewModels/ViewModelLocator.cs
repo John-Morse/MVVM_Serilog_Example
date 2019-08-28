@@ -1,9 +1,9 @@
-namespace MVVM_Template.ViewModel
+namespace MVVM_Serilog.ViewModel
 {
     using CommonServiceLocator;
     using GalaSoft.MvvmLight;
     using GalaSoft.MvvmLight.Ioc;
-    using MVVM_Template.Model;
+    using MVVM_Serilog.Model;
 
     /// <summary>
     /// This class contains static references to all the view models in the

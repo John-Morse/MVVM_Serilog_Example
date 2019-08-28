@@ -1,4 +1,4 @@
-﻿namespace MVVM_Template.Model
+﻿namespace MVVM_Serilog.Model
 {
     using System;
 
@@ -14,7 +14,7 @@
         /// <param name="callback"></param>
         public void GetData(Action<MainItem, Exception> callback)
         {
-            var item = new MainItem("MVVM Light Base Template");
+            var item = new MainItem("MVVM Light with Seriolg!");
             callback(item, null);
         }
     }

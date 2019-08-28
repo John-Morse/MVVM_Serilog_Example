@@ -1,4 +1,4 @@
-﻿namespace MVVM_Template.View
+﻿namespace MVVM_Serilog.View
 {
     using System.Windows.Controls;
 

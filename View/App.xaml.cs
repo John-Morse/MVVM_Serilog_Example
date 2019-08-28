@@ -1,7 +1,7 @@
-﻿namespace MVVM_Template.View
+﻿namespace MVVM_Serilog.View
 {
     using GalaSoft.MvvmLight.Threading;
-    using MVVM_Template.CrossCutting;
+    using MVVM_Serilog.CrossCutting;
     using System.Windows;
 
     /// <summary>
@@ -10,7 +10,7 @@
     public partial class App : Application
     {
         //set the logger
-        private static readonly log4net.ILog log = log4net.LogManager.GetLogger(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
+        //private static readonly log4net.ILog log = log4net.LogManager.GetLogger(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
 
         static App()
         {
@@ -19,7 +19,7 @@
 
             DispatcherHelper.Initialize();
 
-            log.Info("Application Initialized");
+            //log.Info("Application Initialized");
         }
     }
 }

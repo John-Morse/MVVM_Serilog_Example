@@ -2,8 +2,8 @@
 <ResourceDictionary
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-    xmlns:vm="clr-namespace:MVVM_Template.ViewModel;assembly=ViewModel"
-    xmlns:vw="clr-namespace:MVVM_Template.View">
+    xmlns:vm="clr-namespace:MVVM_Serilog.ViewModel;assembly=ViewModel"
+    xmlns:vw="clr-namespace:MVVM_Serilog.View">
 
     <!--  These templates apply Controls to an instance of their respective ViewModel class shown in the main window.  -->
     <DataTemplate DataType="{x:Type vm:MainViewModel}">

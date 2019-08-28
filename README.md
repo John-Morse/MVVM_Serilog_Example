@@ -1,5 +1,5 @@
 # MVVM_Template
-### A Multi-Project MVVM Light Template
+### A MVVM Light solution with Seriog examples
 
 
 ##### John Morse (circa 2019)

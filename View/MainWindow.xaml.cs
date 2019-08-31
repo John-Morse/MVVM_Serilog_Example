@@ -8,9 +8,6 @@
     /// </summary>
     public partial class MainWindow : Window, IClosable
     {
-        //set the logger
-        //private static readonly log4net.ILog log = log4net.LogManager.GetLogger(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
-
         public MainWindow()
         {
             InitializeComponent();
@@ -18,7 +15,7 @@
             {
                 ViewModelLocator.Cleanup();
 
-                //log.Info("Application Closing");
+                Serilog.Log.Information("Application Closing");
             };
         }
     }
